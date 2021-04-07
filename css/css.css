@@ -29,5 +29,6 @@
     overflow: hidden;
     background-color: #3d9b9b91;
   }
-
-  
+body {
+    background: url("../images/background.jpg");
+}
