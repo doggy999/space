@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <link rel="stylesheet" href="../css/css.css">
+    </head>
+    <body>
+        <div class=content>
+            <h1>Dashboard</h1>
+            <p>Dit is het Overwatch dashboard. Vanaf hier kun je meldingen die door ons automatische systeem zijn aangegeven bekijken. <br>
+            Je hebt toegang tot de namen van webpaginas, berichten die gemeld zijn, personen met wie zij gechat hebben, en andere informatie. <br>
+            Als je meer informatie nodig hebt, zoals toegang tot volledige chats, de inhouds van emails, de inhoud van webpaginas, en audio-opnames, vraag dan een zoekbevel aan. Deze word binnen 30 seconden gegeven. <br>
+            Als een persoon met bedoeling zichzelf moeilijker te onderzoeken maakt, geef dit dan snel aan een supervisor. <br>
+                <br>
+            <br>
+            <br>
+                    Klik op een melding om te beginnen.</p>
+        </div>
+        <div class=dashboard>
+            <img src="../images/dashboard.png" alt=space width=1000 height=1000><br>
+            <button type="button" class="hamburger" display=inline><img src="../images/melding1.png" alt=space width=100 height=100></button>
+            <span class=inCollapsible><p>Melding:<br>
+                                        Locatie: Amsterdam. <br>
+                                        Type: Potentiele breuk avondklok</p>
+                                        <img src=../images/Bewijs1.png></div> </span> 
+                <button type="button" class="hamburger" display=inline><img src="../images/melding2.png" alt=space width=100 height=100></button>
+                  <span class=inCollapsible><p>Melding:<br>
+                                                 Locatie: Utrecht <br>
+                                                 Type: Te veel bezoekers</p>
+                                               <img src=../images/bewijs2.png></div> </span> <br>
+               <button type="button" class="hamburger" display=inline><img src="../images/melding3.png" alt=space width=100 height=100></button>
+                 <span class=inCollapsible><p>Melding:<br>
+                                            Locatie: Gronigen <br>
+                                          Type: Tegen-overheids sentiment</p>
+                                         <img src=../images/bewijs3.png></div> </span> <br>
+        </div>
+        <br>
+        <br>
+        <br>
+            <a href="../index.html"><img src="../images/back.png" alt=space width="100" height="50"</a>
+            <script>
+                var coll = document.getElementsByClassName("hamburger");
+                var i;
+                
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                      content.style.display = "none";
+                    } else {
+                      content.style.display = "block";
+                    }
+                  });
+                }
+                </script>
+    </body>
+</html>
